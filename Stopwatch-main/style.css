@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Rubik+Vinyl&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 300% 300%;
+  background-color: rgba(231, 227, 227, 0.756);
+}
+h1{
+  padding-bottom: 400px;
+  text-align: center;
+}
+h1:hover{
+  text-decoration: underline;
+  color: #fff;
+}
+.x{
+  top: 50%;
+    left: 50%;
+    padding: 20px 21px;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+.container{
+    background: rgba(13, 13, 13, 0.147);
+    background-color: #ffe7a8d6;
+    ;
+    width: 40%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 20px 21px;
+    margin-top: 100px;
+    border-radius: 20px;
+    border: 2px solid #111;
+}
+
+.timerDisplay{
+    position: relative;
+    width: 92%;
+    background: #ffffff;
+    left: 4%;
+    padding: 40px 0;
+    font-family: 'Roboto mono',monospace;
+    color: #111;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 10px solid #111;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+}
+.buttons{
+    width: 90%;
+    margin: 60px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.buttons button{
+    width: 120px;
+    height: 45px;
+    background-color: #111;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    font-family: 'Poppins',sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+button {
+  --c:  #8e0909; 
+  
+  box-shadow: 0 0 0 .1em inset var(--c); 
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background: 
+    var(--_g) calc(var(--_p,0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p,0%)) 0%,
+    var(--_g) calc(var(--_p,0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p,0%)) 100%;
+  background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+  outline-offset: .1em;
+  transition: background-size .4s, background-position 0s .4s;
+}
+button:hover {
+  --_p: 100%;
+  transition: background-position .4s, background-size 0s;
+  color: #fff;
+}
+button:active {
+  box-shadow: 0 0 9e9q inset #0009; 
+  background-color: var(--c);
+  color: #fff;
+}
+
+.buttons button:nth-last-child(2){
+  background-color: #111;
+}
+
+.buttons button:nth-last-child(1){
+  background-color: #111;
+}
+.hidden{
+  display: none;
+}
+.laps{
+  list-style: none;
+  color: #111;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  padding: 30px 0;
+}
+.lap-item{
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  border: 3px solid #111;
+  border-radius: 50px;
+}
+.number{
+  color: #111;
+}
+.number:hover{
+  color: #fff;
+}
+.time-stamp{
+  display: inline-block;
+  margin-left: 25px;
+}
+.time-stamp:hover{
+  color: #fff;
+}
+.clearall{
+  margin: 18px 165px;
+  width: 120px;
+  height: 45px;
+  background-color: #1e2702;
+  color: #ffffff;
+  border: none;
+  font-family: 'Poppins',sans-serif;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
