@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatibl  e" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SHIVAM Foundation</title>
+</head>
+<body>
+    <section class="header" >
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#x">ABOUT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
+        </nav>
+<br>
+ <div class="text-box">
+     <h1>Payment API Integration</h1><br>
+     <p>
+        Change will not come if we wait for some other person or some other time.<br> We are the ones we have been waiting for. We are the change that we seek.
+     </p>
+     <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_KXWV2aqT1OFKEj" async> </script> </form>
+
+    </div>
+
+</section>
+
+<hr> <hr>
+<section class="footer" id="x">
+    <h4>About us</h4>
+    <p>
+         Financial institution that accepts deposits from the <br>public and creates a demand deposit while simultaneously making loans.
+    </p>
+    <br>    
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="copyright-box">
+                <p class="copyright"><strong></strong></p>
+                <div class="credits">
+                  Designed by <strong>SHIVAM BORSE .</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <div class="icons">
+        <a href="https://www.linkedin.com/in/shivam-borse-3149a8207/" i class="fa fa-linkedin-square"></a>
+        <a href="https://github.com/shivam1750" i class="fa fa-github" ></a>
+        <a href="https://www.instagram.com/shivam1750/"><span class="ico-circle"><i class="fa fa-instagram"></i></span></a>
+    </div>
+    <p></p>
+</section>
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+     }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+     }
+
+</script>
+</body>
+</html>
